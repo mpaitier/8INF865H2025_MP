@@ -1,0 +1,33 @@
+# Gradle files
+.gradle/
+build/
+*.jar
+*.war
+*.ear
+
+# Android Studio configuration files
+.idea/
+*.iml
+*.hprof
+
+# Local configuration
+local.properties
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# macOS specific files
+.DS_Store
+
+# Android captures
+/captures/
+
+# Native build files
+.externalNativeBuild/
+.cxx/
+
+# Ignore log files
+*.log
