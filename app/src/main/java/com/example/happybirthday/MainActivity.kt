@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -70,7 +71,9 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
         contentAlignment = Alignment.Center) {  // Pour centrer le texte au milieu de l'écran
         Image(
             painter = image,
-            contentDescription = null
+            contentDescription = null,
+            contentScale = ContentScale.Crop,    // Image prend tout l'écran
+            alpha = 0.5F                        // Contraste de l'image
         )
         GreetingText(
             message = message,
